@@ -11,9 +11,6 @@ module SpreeEditor
         inject_into_file "app/assets/stylesheets/admin/all.css", " *= require admin/spree_editor\n", :before => /\*\//, :verbose => true
       end
 
-      def copy_tinymce_file
-        copy_file "config/tinymce.yml", "config/tinymce.yml"
-      end
     end
   end
 end

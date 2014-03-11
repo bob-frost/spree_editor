@@ -7,7 +7,6 @@
 This extension provides an inline rich-text editor for Spree. It implements different types of editors:
 
 - [CKEditor](http://ckeditor.com/)
-- [TinyMCE](http://www.tinymce.com/)
 
 ## Installation
 
@@ -44,16 +43,6 @@ SpreeEditor::Config.tap do |config|
   config.ids = "product_description page_body event_body"
 end
 ```
-
-## Language-Support
-
-To obtain support for multiple languages with TinyMCE add tinymce-rails-langs to your Gemfile:
-
-```ruby
-gem 'tinymce-rails-langs'
-```
-
-TinyMCE will not be loaded unless it finds a language package matching your `Spree::Config.default_locale`.
 
 ## Testing
 

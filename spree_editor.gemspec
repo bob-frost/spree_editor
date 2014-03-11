@@ -3,7 +3,7 @@ Gem::Specification.new do |s|
   s.name        = 'spree_editor'
   s.version     = '2.1.4'
   s.summary     = 'Adds support for WYSIWYG editors to Spree'
-  s.description = 'Currently Supported: CKEditor, TinyMCE'
+  s.description = 'Currently Supported: CKEditor'
   s.required_ruby_version = '>= 1.9.2'
 
   s.authors           = ['Alexander Shuhin', 'Roman Smirnov', 'divineforest', 'Marc Lee', 'Jeff Dutil']
@@ -16,7 +16,6 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'ckeditor', '4.0.6' # Lockdown to fix undefined method scoped & last_page? errors introduced in newer versions.
   s.add_dependency 'spree_backend', '>= 2.1.4'
-  s.add_dependency 'tinymce-rails', '~> 3.5.8.3'
 
   s.add_development_dependency 'capybara', '~> 2.1'
   s.add_development_dependency 'coffee-rails'
