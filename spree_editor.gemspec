@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'ckeditor', '4.0.6' # Lockdown to fix undefined method scoped & last_page? errors introduced in newer versions.
+  s.add_dependency 'ckeditor', '>= 4.0.7'
   s.add_dependency 'spree_backend', '>= 2.1.4'
 
   s.add_development_dependency 'capybara', '~> 2.1'

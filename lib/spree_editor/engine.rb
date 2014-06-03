@@ -16,6 +16,10 @@ module SpreeEditor
       end
     end
 
+    initializer "spree_editor.assets" do |app|
+      Rails.application.config.assets.precompile += %w(admin/spree_editor.js)
+    end
+
     config.autoload_paths += %W(#{config.root}/lib)
 
     def self.activate
